@@ -29,6 +29,19 @@ Each branch reflects the source code compatible with the Smartstore version, e.g
 This means that a new (hotfix) branch is created with each new release.
 By doing this, we can quickly access the source code of the module for a specific version and fix critical issues without affecting the ongoing development.
 
+## Documentation
+
+> With great code comes great documentability. :spider:
+
+Please decorate your code and repository `README`'s with useful comments and documentation.
+
+### Test-Data
+
+If any generic data was used to test your module, such as phone numbers, bank details, or login credentials, please include it either in your documentation, the readme file, or in an extra file that is linked to.
+This is especially important for payment and import/export modules.
+
+Please also include any sample files you used, as long as they are reasonably sized, located in the wwwroot directory, and have the word *sample* in the filename.
+
 ## Using the Packager
 
 To create the NuGet packages needed for quick deployment, please use the [Smartstore.Packager](https://smartstore.gitbook.io/developer-guide/compose/modules/deploying-modules#packager).
