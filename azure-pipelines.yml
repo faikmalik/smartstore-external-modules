@@ -1,0 +1,17 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- script: git push https://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/faikmalik/smartstore-external-modules master
+  displayName: 'update to github'
